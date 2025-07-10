@@ -1,4 +1,9 @@
-node_modules
-assets
+# Node.js modules
+node_modules/
+
+# Diretório de arquivos estáticos ou externos
+assets/
+
+# Arquivos de controle de dependências do npm
 package-lock.json
 package.json
