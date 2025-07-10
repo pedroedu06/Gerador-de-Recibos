@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>ReciboFácil</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>ReciboFácil</h1>
+                <i class="fa-solid fa-receipt"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Gerar Recibo</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="generateBtn">
+            <button onclick="openModal()">Gerar Recibo</button>
+        </div>
+    </section>
+    <section></section>
+    <footer></footer>
+
+
+
+
+      <div class="janelaFormModal">
+                <div class="modal">
+                    <button class="fechar" onclick="fecharModal()">X</button>
+                    <h1>Insira as informacoes do boleto</h1>
+                    <form class="form-submit">
+                        <label>Nome: <input type="text" name="Nome" required></label>
+                        <label>Valor: (R$)<input type="number" name="Valor" step="0.01" required></label>
+                        <label>Serviço prestado: <input type="text" name="Serviço" required></label>
+                        <label>Data: <input type="date" name="Data" required></label>
+                        <label>Forma de pagamento: <input type="text" name="FormaPagamento" required></label>
+                        <label>Prestador: <input type="text" name="Prestador" required></label>
+                        <label>Assinatura (opicional): <input type="text" name="AssinaturaTexto"><input type="file" name="AssinaturaFile" accept="image/*"></label>
+                        <button type="submit" class="submitBtn">Gerar Recibo</button>
+                    </form>
+                </div>
+            </div>
+
+    <script src="scripts.js"></script>
+    <script src="https://kit.fontawesome.com/b62786645e.js" crossorigin="anonymous"></script>
+</body>
+</html>
