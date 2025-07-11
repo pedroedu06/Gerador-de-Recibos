@@ -1,9 +1,5 @@
-# Node.js modules
-node_modules/
-
-# Diretório de arquivos estáticos ou externos
 assets/
-
-# Arquivos de controle de dependências do npm
+node_modules/
 package-lock.json
 package.json
+.gitignore
